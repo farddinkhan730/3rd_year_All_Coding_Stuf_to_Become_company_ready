@@ -192,9 +192,38 @@ class Solutin {
             sum+=(s.charAt(s.length()-1-i)-'0')*Math.pow(2,i);
 //            System.out.println(sum);
         }
-
-
         System.out.println(Integer.parseInt("0110",2));
 
+    }
+}
+class tree{
+    static class Node{
+        int data;
+        Node left,right;
+        Node(int data){
+            this.data=data;
+        }
+
+    }
+    public static int max(Node root){
+        if(root==null){
+            return 0;
+        }
+        int left=max(root.left);
+        int rigt=max(root.right);
+
+        return Math.max(root.data,Math.max(left,rigt));
+    }
+
+    public static void main(String[] args) {
+        Node root=new Node(5);
+        root.left=new Node(23);
+        root.right=new Node(44);
+        root.left.left=new Node(12);
+        root.left.right=new Node(2);
+        root.right.left=new Node(44);
+        root.right.right=new Node(556);
+
+        System.out.println( max(root));
     }
 }
