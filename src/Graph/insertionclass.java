@@ -19,6 +19,22 @@ public class insertionclass {
             this.val=val;
         }
     }
+    static class Pair{
+        int v;
+        int t;
+        int k;
+        Pair(int v,int t){
+            this.v=v;
+            this.t=t;
+
+        }
+
+        public Pair(int v, int t, int k) {
+            this.v = v;
+            this.t = t;
+            this.k = k;
+        }
+    }
     public static void addEdge(ArrayList<Integer>graph[], int v1, int v2){
         graph[v1].add(v2);
         graph[v2].add(v1);
