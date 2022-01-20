@@ -48,6 +48,7 @@ public class Maximum_Distance_a_Pair {
             }
         }
 
+
         for (i = 0; i < nums.length; i++) {
             System.out.println(nums[i]);
         }
