@@ -1,5 +1,8 @@
 package Oops;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class practice {
 
 }
@@ -162,6 +165,14 @@ class wild extends Animal{
     public wild() {
         System.out.println("Wild");
 //        super();  super call shuld bhi first in constructor body
+    }
+}
+class add{
+    public static void main(String[] args) {
+        int b=101;
+        float v=b;
+        System.out.println(v);
+
     }
 }
 
